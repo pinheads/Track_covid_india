@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Global from './components/Global/Global';
+import GithubCorner from 'react-github-corner';
+import SearchBar from './components/Search/SearchBar';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<h1 className='main-heading'>COVID-19</h1>
+			<hr />
+			<h2 className='global-heading'>Global Data</h2>
+			<Global />
+			<hr />
+			<h2 className='search-heading'>Search for a Country</h2>
+			<SearchBar />
+		</div>
+	);
 }
 
 export default App;
